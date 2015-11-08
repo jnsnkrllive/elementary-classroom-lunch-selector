@@ -1,0 +1,24 @@
+[
+  {
+    "id": "district",
+    "value": "Milan Area Schools"
+  },{
+    "id": "school",
+    "value": "Symons Elementary"
+  },{
+    "id": "teacherName",
+    "value": "Corinne Jansen"
+  },{
+    "id": "teacherEmail",
+    "value": "jansenc@milanareaschools.org"
+  },{
+    "id": "classroom",
+    "value": "A16"
+  },{
+    "id": "gradelevel",
+    "value": "4th"
+  },{
+    "id": "kitchenEmail",
+    "value": "jansenc@milanareaschools.org"
+  }
+]

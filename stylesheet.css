@@ -1,0 +1,293 @@
+/** Color Scheme
+  Light Salmon
+    Light: FFB294
+    Main: FFA07A
+    Dark: FF8E61
+
+  Mint
+    Light: D5FDDD
+    Main: BDFCC9
+    Dark: A5FBB5
+
+  Light Yellow
+    Light: FFFFE0
+    Main: FFFFC7
+    Dark: FFFFAD
+
+  Sky Blue
+    Light: 9DD7EF
+    Main: 87CEEB
+    Dark: 71C5E7
+
+  Plum
+    Light: E4B3E4
+    Main: DDA0DD
+    Dark: D68DD6
+
+  Pink
+    Light: FFDAE0
+    Main: FFC0CB
+    Dark: FFA7B6
+****************************************************************/
+
+
+/** Custom Fonts
+****************************************************************/
+@font-face {
+  font-family: abc_bulletin;
+  src: url('ABCBULLE.ttf');
+}
+
+@font-face {
+  font-family: abc_print;
+  src: url('ABCPRINT.ttf');
+}
+
+
+/** General Classes
+****************************************************************/
+.bold {
+  font-weight: 700;
+}
+
+.clear {
+  clear: both;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+/** Custom Styles
+****************************************************************/
+* {
+  margin: 0px;
+}
+
+html,
+body,
+.ui-page {
+  height: 100%;
+  width: 100%;
+  font-family: abc_print, 'Comic Sans MS';
+  font-weight: 700;
+  overflow: hidden;
+  text-align: center;
+  margin: 0px;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+
+#header-container {
+  background-color: #FFFFFF;
+  font-family: abc_bulletin, 'Comic Sans MS';
+  display: block;
+  font-size: 2.4em;
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#header-container #header-content {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#student-container {
+  background-color: #FFFFFF;
+  display: block;
+  height: 20%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#lunch-box-container {
+  display: block;
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.lunch-box.even {
+  background-color: #FFFFC7;
+}
+.lunch-box.odd {
+  background-color: #BDFCC9;
+}
+
+.student {
+  display: inline;
+  float: left;
+  background-color: #FFA07A;
+  color: #000000;
+  font-size: 2.0em;
+  font-weight: 700;
+  text-align: center;
+  width: 80px;
+  margin: 5px;
+  padding: 5px;
+  cursor: move;
+  -webkit-border-radius: 10px;
+  -moz-border-radius:    10px;
+  border-radius:         10px;
+}
+
+.student:hover {
+  background-color: #FFB294;
+}
+
+.student.ui-sortable-helper,
+.student.selected {
+  background-color: #FF8E61;
+}
+
+
+#lunch-box-0 {
+  height: 100%;
+}
+
+.student-box {
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#lunch-box-container .lunch-box {
+  display: inline;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.student-box-label,
+.student-box-space,
+.student-box-count {
+  font-size: 1.8em;
+  display: inline;
+}
+
+.ui-sortable-placeholder {
+  border: 1px dotted black;
+  visibility: hidden !important;
+  height: 20px !important;
+}
+
+.ui-sortable-placeholder * {
+  visibility: hidden;
+}
+
+
+
+
+#command-bar {
+  height: 10%;
+}
+
+#command-bar input[type="button"] {
+  background-color: #87CEEB;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.0em;
+  font-weight: 400;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius:    10px;
+  border-radius:         10px;
+}
+
+#command-bar input[type="button"]:hover {
+  background-color: #9DD7EF;
+}
+
+#command-bar input[type="button"]:active {
+  background-color: #71C5E7;
+}
+
+
+
+
+#shadow-window {
+  -moz-opacity: 0.80;
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  display: none;
+  position: fixed;
+  z-index: 1001;
+}
+#modal-window {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  display: none;
+  overflow: auto;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  z-index: 1002;
+  -webkit-border-radius: 20px;
+  -moz-border-radius:    20px;
+  border-radius:         20px;
+}
+#modal-window form#email-form {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 420px;
+  text-align: left;
+}
+
+
+#modal-window form#edit-general-data-form table,
+#modal-window form#edit-lunch-box-data-form table,
+#modal-window form#edit-student-data-form table {
+  margin: 0 auto;
+}
+
+#modal-window form#edit-general-data-form td.label {
+  width: 200px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+#modal-window form#edit-general-data-form td.input {
+  width: 400px;
+}
+
+#modal-window form#edit-general-data-form td.input input[type="text"] {
+  width: 360px;
+}
+
+
+#modal-window form#edit-lunch-box-data-form td.label,
+#modal-window form#edit-student-data-form td.label {
+  width: 200px;
+  text-align: center;
+}
+
+#modal-window form#edit-lunch-box-data-form td.input,
+#modal-window form#edit-student-data-form td.input {
+  width: 200px;
+}
+
+#modal-window form#edit-lunch-box-data-form td.input input[type="text"],
+#modal-window form#edit-student-data-form td.input input[type="text"] {
+  width: 180px;
+}
+
+#modal-window form#edit-lunch-box-data-form td.removeRow,
+#modal-window form#edit-student-data-form td.removeRow
+#modal-window form#edit-lunch-box-data-form td.insertRow,
+#modal-window form#edit-student-data-form td.insertRow {
+  padding: 0 20px;
+}

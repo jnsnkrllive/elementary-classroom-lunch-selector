@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0",
+    "label": "DEFAULT",
+    "count": "0"
+  },{
+    "id": "1",
+    "label": "Hot Lunch",
+    "count": "0"
+  },{
+    "id": "2",
+    "label": "Sandwich Central",
+    "count": "0"
+  },{
+    "id": "3",
+    "label": "Alternate Grille",
+    "count": "0"
+  },{
+    "id": "4",
+    "label": "Home Lunch",
+    "count": "0"
+  }
+]
