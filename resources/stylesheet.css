@@ -34,13 +34,10 @@
 /** Custom Fonts
 ****************************************************************/
 @font-face {
-  font-family: abc_bulletin;
-  src: url('ABCBULLE.ttf');
-}
-
-@font-face {
-  font-family: abc_print;
-  src: url('ABCPRINT.ttf');
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('open-sans/OpenSans-Regular.ttf');
 }
 
 
@@ -70,7 +67,7 @@ body,
 .ui-page {
   height: 100%;
   width: 100%;
-  font-family: abc_print, 'Comic Sans MS';
+  font-family: 'Open Sans', 'Comic Sans MS';
   font-weight: 700;
   overflow: hidden;
   text-align: center;
@@ -84,7 +81,7 @@ body,
 
 #header-container {
   background-color: #FFFFFF;
-  font-family: abc_bulletin, 'Comic Sans MS';
+  font-family: 'Open Sans', 'Comic Sans MS';
   display: block;
   font-size: 2.4em;
   height: 30%;
